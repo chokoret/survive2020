@@ -1,0 +1,255 @@
+body {
+  background: #000;
+  font-size: 1em;
+  color: #fff;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.container {
+  padding: 1em;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+  text-align: center;
+}
+p { width: 500px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  p {
+  margin: 0 auto;
+  width: 100%;
+  
+  }
+}
+
+.logo_box {margin: 0 auto; width:200px;height:70px;position:relative;border:0px;font-family: 'Syne Mono', monospace;} 
+ul.index {list-style:none;position:relative;}
+ul.index li {position:absolute;}
+ul.index li.first {color:#FBD501;top:30;left:140;font-size: 2em;}
+ul.index li.first2 {color:#000;top:31;left:141;font-size: 2em;}
+ul.index li.second {color:#fff;top:2px;left:2px;font-size: 3em;}
+ul.index li.third {color:#FF409F;top:0px;left:0px;font-size: 3em;} 
+ul.index li.fourth {color:#0BFFF0;top:4px;left:4px;font-size: 3em;}
+ul.index_use li.first {z-index:2;}
+ul.index_use li.second {z-index:3;}
+ul.index_use li.third {z-index:4;}
+ul.index_use li.fourth {z-index:5;}
+
+.spacer {
+height: 20px;
+}
+
+
+
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  cursor:pointer;
+  background: none;
+  width: 450px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 1em 1em;
+  position: relative;
+  text-transform: uppercase;
+}
+@media (max-width: 600px) {
+  button {
+  cursor:pointer;
+  background: none;
+  width: 95%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 1em 1em;
+  position: relative;
+  text-transform: uppercase;
+  }
+}
+button::before,
+button::after {
+  background: #ff0000;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #fff;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-1:hover:after {
+  width: 100%;
+}
+
+.clipboard {
+    border: 0;
+    padding: 5px;
+    border-radius: 3px;
+    background: #FDEB71;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    position: relative;
+    top: 0;
+  }
+
+.fail {
+color: #810C17;
+
+}
+
+.success {
+color: #00D4F1;
+}
+
+
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
+.fade-out {
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  100% {
+    opacity:0;
+}
+
+}
+
+
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: opacity .5s ease;
+  background-color: #000;
+  opacity: 1;
+  z-index: 8;
+  text-align: center;
+  cursor: pointer;
+}
